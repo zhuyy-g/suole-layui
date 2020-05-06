@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: white;
+	
+}
+
+.for-table {
+	margin-top: 20px;
+}
+
+.layui-table-view .layui-table {
+    width: 100%;
+}

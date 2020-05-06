@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/layui.css">
+		<link rel="stylesheet" href="css/wzlb.css">
+		<link rel="icon" href="/favicon.ico">
+		<title>文章列表</title>
+	</head>
+	<body>
+		<div class="container">
+			<form class="layui-form" action="" style="padding: 20px 0px;padding-right: 5%;border-bottom: 1px solid #c9c5c56e;">
+				<div class="layui-row">
+					<div class="layui-col-lg4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">文章ID</label>
+							<div class="layui-input-block">
+							  <input type="text" name="articleId" placeholder="请输入" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-lg4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">作者</label>
+							<div class="layui-input-block">
+							  <input type="text" name="editor" placeholder="请输入" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-lg4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">标题</label>
+							<div class="layui-input-block">
+							  <input type="text" name="title" placeholder="请输入" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-lg4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">文章标签</label>
+							<div class="layui-input-block">
+							  <input type="text" name="articleLabel" placeholder="请输入" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-lg4">
+						<div class="layui-form-item">
+							<div class="layui-input-block">
+								<button type="submit" class="layui-btn"><i class="layui-icon">&#xe615;</i> </button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="for-table">
+				<table class="layui-hide" id="wzlb-table" lay-filter="test" style="width: 100%;"></table>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="layui.js"></script>
+	<script type="text/html" id="releaseStatusTpl">
+	  {{#  if(d.releaseStatus === 1){ }}
+		<button type="button" class="layui-btn layui-btn-xs">已发布</button>
+	  {{#  } else { }}
+	    <button type="button" class="layui-btn layui-btn-primary layui-btn-xs">待修改</button>
+	  {{#  } }}
+	</script>
+	
+	<script type="text/html" id="toolbarDemo">
+	  <div class="layui-btn-container">
+	    <button class="layui-btn layui-btn-sm" lay-event="deleteData">删除</button>
+	    <button class="layui-btn layui-btn-sm" lay-event="addDate">添加</button>
+	  </div>
+	</script>
+	 
+	<script type="text/html" id="barDemo">
+	  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+	  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a>
+	</script>
+	 
+	<script>
+		layui.use('table', function(){
+		  var table = layui.table;
+		  
+		  table.render({
+			elem: '#wzlb-table'
+			,toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
+			,title: '用户数据表'
+			,cols: [[
+			  {type: 'checkbox', width:'5%', align: 'center'}
+			  ,{field:'articleId', title:'文章ID', width:'10%', sort: true, align: 'center'}
+			  ,{field:'articleLable', title:'文章标签', width:'15%', edit: 'text', align: 'center'}
+			  ,{field:'articleTitle', title:'文章标题', width:'15%', edit: 'text', align: 'center'}
+			  ,{field:'author', title:'作者', width:'10%', edit: 'text', align: 'center'}
+			  ,{field:'uploadTime', title:'上传时间', width:'15%', edit: 'text', sort: true, align: 'center'}
+			  ,{field:'releaseStatus', title:'发布状态', width:'15%', templet: '#releaseStatusTpl', align: 'center'}
+			  ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:'15%', align: 'center'}
+			]]
+			,data: [{
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第一季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 1
+			}, {
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第二季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 0
+			}, {
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第一季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 1
+			}, {
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第二季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 0
+			}, {
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第一季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 1
+			}, {
+			  "articleId": "001"
+			  ,"articleLable": "美食"
+			  ,"articleTitle": "舌尖上的中国第二季"
+			  ,"author": "作者-1"
+			  ,"uploadTime": "20121204"
+			  ,"releaseStatus": 0
+			}, {
+			 "articleId": "001"
+			 ,"articleLable": "美食"
+			 ,"articleTitle": "舌尖上的中国第一季"
+			 ,"author": "作者-1"
+			 ,"uploadTime": "20121204"
+			 ,"releaseStatus": 1
+			}, {
+			 "articleId": "001"
+			 ,"articleLable": "美食"
+			 ,"articleTitle": "舌尖上的中国第二季"
+			 ,"author": "作者-1"
+			 ,"uploadTime": "20121204"
+			 ,"releaseStatus": 0
+			}]
+			,page: true
+		  });
+		  
+		  //头工具栏事件
+		  table.on('toolbar(test)', function(obj){
+			var checkStatus = table.checkStatus(obj.config.id);
+			switch(obj.event){
+			  case 'edit':
+				
+			  break;
+			  case 'getCheckLength':
+				
+			  break;
+			};
+		  });
+		  
+		  //监听行工具事件
+		  table.on('tool(test)', function(obj){
+			var data = obj.data;
+			//console.log(obj)
+			if(obj.event === 'del'){
+			  layer.confirm('真的删除行么', function(index){
+				obj.del();
+				layer.close(index);
+			  });
+			} else if(obj.event === 'edit'){
+			  layer.prompt({
+				formType: 2
+				,value: data.email
+			  }, function(value, index){
+				obj.update({
+				  email: value
+				});
+				layer.close(index);
+			  });
+			}
+		  });
+		});
+	</script>
+</html>

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.index-remind {
+    position: relative;
+    width: 98%;
+    height: 60px;
+    background-color: white;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 60px;
+}
+.index-remind ul {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    line-height: 40px;
+}
+.index-remind-main {
+    width: 100%;
+    padding-left: 20px;
+}
+.findex-top {
+    margin-top: 20px;
+    height: 420px;
+}
+.findex-top-item {
+    width: 93%;
+    height: 400px;
+    margin: 14px;
+    background-color: white;
+    overflow: auto;
+}
+.findex-top-item-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.findex-top-item-title>span {
+    margin-left: 20px;
+}
+.layui-laydate {
+    width: 100%;
+}
+.layui-laydate-main {
+    width: 100% !important;
+}
+.layui-laydate-content table {
+    width: 100%;
+}
+.layui-laydate-content {
+    height: 310px;
+}
+.layui-laydate-content table {
+    height: 100%;
+}
+.findex-top-item-ul{
+    list-style: none;
+}
+.findex-top-item-ul>li {
+    position: relative;
+    padding: 15px 10px;
+    border-bottom: 1px solid #F2F2F2;
+    overflow: hidden;
+}
+.layui-form-switch {
+    margin-top: 0px;
+}
+.layui-form-onswitch {
+    border-color: #009688;
+    background-color: #009688;
+}
+.layui-progress-big {
+    margin-top: 15px;
+}
+.findex-bottom {
+    margin-top: 20px;
+    height: 400px;
+}
+.findex-bottom-item {
+    box-sizing: border-box;
+    width: 96%;
+    height: 400px;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+}
+.for-breadcrumb {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+}
+.for-complete {
+    position: absolute;
+    right: -40px;
+    top: 18px;
+    font-size: 28px;
+}

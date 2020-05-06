@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel1 .layui-carousel-ind {
+    top: -241px;
+    text-align: right;
+}
+
+.carousel1 .grid-demo>a {
+	display: block;
+	height: 80%;
+	line-height: 66px;
+	background-color: white;
+	margin: 10px;
+}
+
+.carousel2 .layui-carousel-ind {
+    top: -317px;
+    text-align: right;
+}
+
+.layui-progress {
+    top: 30px;
+}
+
+.layui-progress-text {
+    top: -25px;
+    font-size: 24px;
+}
+
+.layui-progress-bar {
+    text-align: left;
+}
+.layui-progress-detail {
+	position: absolute;
+	right: 0px;
+	top: -29px;
+	color: #897e7e;
+}
+
+.layui-progress-detail .layui-icon-flip {
+	display: inline-block;
+	-moz-transform:scaleY(-1);
+	-webkit-transform:scaleY(-1);
+	-o-transform:scaleY(-1);
+	transform:scaleY(-1)
+}
+
+.layui-card-header li {
+	float: left;
+}
+
+.layui-card-header li:hover {
+	border-bottom:  2px solid #009688;
+	cursor: pointer;
+}
+
+.resouOrretie li {
+	display: none;
+}
+
+.resouOrretie .active {
+	display: block;
+}
+
+#cpdt .layui-carousel-ind {
+    top: -102px;
+    text-align: right;
+}
+
+.linkTo a {
+	display: block;
+	line-height: 60px;
+	color: white;
+}
+
+.orange{
+	width: 100%;
+	height: 100%;
+	background-color: orangered;
+	line-height: 100%;
+	text-align: center;
+}
+
+.green{
+	width: 100%;
+	height: 100%;
+	background-color: #009688;
+	line-height: 100%;
+	text-align: center;
+}
+
+.blue{
+	width: 100%;
+	height: 100%;
+	background-color: #007DDB;
+	line-height: 100%;
+	text-align: center;
+}

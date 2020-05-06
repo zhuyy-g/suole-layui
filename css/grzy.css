@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.layui-btn+.layui-btn {
+    margin-left: 0px;
+}
+
+.identity button {
+	margin-top: 10px;
+}
+
+.topCount ul {
+	width: 80%;
+	height: 100%;
+}
+
+.topCount ul>li {
+	display: inline-block;
+	width: 14%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding: 25px 0px;
+	text-align: center;
+}
+
+.topCount .count {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.title-text {
+	display: inline-block;																			
+}
+
+.title-text a {
+	font-weight: 700;
+	color: grey;
+}
+
+.title-text>p {
+	line-height: 20px;
+}
+
+.response>ul>li {
+	padding: 25px 0px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.response div {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.pics {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	justify-content : space-between;
+	flex-wrap: wrap;
+}
+
+.pics img {
+	width: 30%;
+}
+
+.privateLetter ul {
+	width: 100%;
+	height: 100%;
+}
+
+.privateLetter li {
+	position: relative;
+	padding: 10px 0px;
+	height: 70px;
+}
+
+.privateLetter .privateLetter-text {
+	position: absolute;
+	left: 50px;
+	top: 5px;
+	width: 75%;
+	height: 100%;
+}
+
+.privateLetter li:hover {
+	background-color: #c2c2c266;
+}
+
+.privateLetter img {
+	position: absolute;
+	left: 10px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #4e546542;
+}

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/layui.css">
+		<link rel="stylesheet" href="css/kzt.css">
+		<link rel="icon" href="/favicon.ico">
+		<title>控制台</title>
+	</head>
+	<body>
+		<div style="padding: 20px; background-color: #F2F2F2;">
+		  <div class="layui-row layui-col-space15">
+		    <div class="layui-col-md4">
+		      <div class="layui-card">
+		        <div class="layui-card-header">快捷方式</div>
+		        <div class="layui-card-body" style="height: 200px;">
+		          <div class="layui-carousel carousel1" id="shortcut">
+		            <div carousel-item="">
+						<div>
+							<div class="layui-row layui-col-space5" style="height: 40%;">
+							  <div class="layui-col-xs3" style="height: 100%;">
+								<div class="grid-demo" style="height: 100%;text-align: center;">
+									<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe665;</i></a>
+									<p>主页一</p>
+								</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe62c;</i></a>
+										<p>主页二</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe656;</i></a>
+										<p>弹层</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe606;</i></a>
+										<p>聊天</p>
+									</div>
+							  </div>
+							</div>
+							<div class="layui-row layui-col-space5" style="height: 40%;margin-top: 17px;">
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe665;</i></a>
+										<p>主页一</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe62c;</i></a>
+										<p>主页二</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe656;</i></a>
+										<p>弹层</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe606;</i></a>
+										<p>聊天</p>
+									</div>
+							  </div>
+							 </div>
+						</div>
+						<div>
+							<div class="layui-row layui-col-space5" style="height: 40%;">
+							  <div class="layui-col-xs3" style="height: 100%;">
+								<div class="grid-demo" style="height: 100%;text-align: center;">
+									<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe665;</i></a>
+									<p>主页一</p>
+								</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe62c;</i></a>
+										<p>主页二</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe656;</i></a>
+										<p>弹层</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe606;</i></a>
+										<p>聊天</p>
+									</div>
+							  </div>
+							</div>
+							<div class="layui-row layui-col-space5" style="height: 40%;margin-top: 17px;">
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe665;</i></a>
+										<p>主页一</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe62c;</i></a>
+										<p>主页二</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe656;</i></a>
+										<p>弹层</p>
+									</div>
+							  </div>
+							  <div class="layui-col-xs3" style="height: 100%;">
+									<div class="grid-demo" style="height: 100%;text-align: center;">
+										<a href=""><i class="layui-icon" style="font-size: 30px;">&#xe606;</i></a>
+										<p>聊天</p>
+									</div>
+							  </div>
+							 </div>
+						</div>
+		            </div>
+		          </div> 
+		        </div>
+		      </div>
+		    </div>
+		    <div class="layui-col-md4">
+		      <div class="layui-card">
+		        <div class="layui-card-header">待办事项</div>
+		        <div class="layui-card-body" style="height: 200px;">
+		          <div class="layui-carousel carousel1" id="toDoList">
+		            <div carousel-item="">
+		              <div>
+						  <div class="layui-row layui-col-space10" style="height: 45%;">
+						    <div class="layui-col-md6" style="height: 100%;">
+						      <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>  
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+						    </div>
+						    <div class="layui-col-md6" style="height: 100%;">
+						      <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+						    </div>
+						  </div>
+						  <div class="layui-row layui-col-space10" style="height: 45%;margin-top: 15px;">
+						    <div class="layui-col-md6" style="height: 100%;">
+						      <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+							    <p style="font-size: 10px;color: #999999;">待审评论</p>
+							    <p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+						    </div>
+						    <div class="layui-col-md6" style="height: 100%;">
+						      <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+							    <p style="font-size: 10px;color: #999999;">待审评论</p>
+							    <p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+						    </div>
+						  </div>
+					  </div>
+		              <div>
+						  <div class="layui-row layui-col-space10" style="height: 45%;">
+							<div class="layui-col-md6" style="height: 100%;">
+							  <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>  
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+							</div>
+							<div class="layui-col-md6" style="height: 100%;">
+							  <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+							</div>
+						  </div>
+						  <div class="layui-row layui-col-space10" style="height: 45%;margin-top: 15px;">
+							<div class="layui-col-md6" style="height: 100%;">
+							  <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+							</div>
+							<div class="layui-col-md6" style="height: 100%;">
+							  <a href="" style="display: block;width: 90%;height: 100%;background-color: white;margin: 10px auto;box-sizing: border-box;padding: 15px;">
+								<p style="font-size: 10px;color: #999999;">待审评论</p>
+								<p style="color: #5FB878;font-size: 30px;margin-top: 5px;">31</p>
+							  </a>
+							</div>
+						  </div>
+		              </div>
+		            </div>
+		          </div> 
+		        </div>
+		      </div>
+		    </div>
+		    <div class="layui-col-md4">
+		      <div class="layui-card">
+		        <div class="layui-card-header">版本信息</div>
+		        <div class="layui-card-body" style="height: 200px;">
+		          <table class="layui-table">
+		            <colgroup>
+		              <col width="150">
+		              <col width="200">
+		              <col>
+		            </colgroup>
+		            <tbody>
+		              <tr>
+		                <td>当前版本</td>
+		                <td>v2020 std </td>
+		              </tr>
+		              <tr>
+		                <td>基于框架</td>
+		                <td>layui-v2.5.6</td>
+		              </tr>
+					  <tr>
+					    <td>主要特色</td>
+					    <td>零门槛 / 响应式 / 清爽 / 极简</td>
+					  </tr>
+					  <tr>
+					    <td>许闲心</td>
+					    <td>
+							<button type="button" class="layui-btn layui-btn-danger layui-btn-sm">获取授权</button>
+							<button type="button" class="layui-btn layui-btn-sm">立即下载</button>
+						</td>
+					  </tr>
+		            </tbody>
+		          </table>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div> 
+		<div style="padding: 20px; background-color: #F2F2F2;">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md8">
+					<div class="layui-card">
+						<div class="layui-card-header">数据概览</div>
+						<div class="layui-card-body" style="height: 278px;">
+						  <div class="layui-carousel carousel2" id="dataOverview" lay-filter="test4">
+						    <div carousel-item="">
+						      <div>
+								  <div id="line_chart" style="width:100%;height:100%;"></div>
+							  </div>
+							  <div>
+							  	  <div id="pie_chart" style="width:100%;height:100%;"></div>						  
+							  </div>
+							  <div>
+							  	  <div id="line_chart2" style="width:100%;height:100%;"></div>						  
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-md4">
+					<div class="layui-card">
+						<div class="layui-card-header">效果报告</div>
+						<div class="layui-card-body" style="height: 100px;">
+						  <div class="layui-progress" lay-showpercent="true">
+							  <div class="layui-progress-detail">
+							  	转化率（日同比 28% <i class="layui-icon layui-icon-flip">&#xe625;</i>）
+							  </div>
+						    <div class="layui-progress-bar" lay-percent="65%">
+								<!-- 注意：在此处添加代码会导致这段代码的消失（原因可能是layui的js代码直接处理了此元素的内部html） -->
+							</div>
+						  </div>
+						  <div class="layui-progress" lay-showpercent="true" style="top: 80px;">
+							  <div class="layui-progress-detail">
+								签到率（日同比 11% <i class="layui-icon">&#xe625;</i>）
+							  </div>
+						    <div class="layui-progress-bar" lay-percent="32%"></div>
+						  </div>
+						</div>
+					</div>
+					<div class="layui-card">
+						<div class="layui-card-header">实时监控</div>
+						<div class="layui-card-body" style="height: 100px;">
+						  <div class="layui-progress" lay-showpercent="true">
+							  <div class="layui-progress-detail">
+								CPU使用率
+							  </div>
+						    <div class="layui-progress-bar" lay-percent="58%"></div>
+						  </div>
+						  <div class="layui-progress" lay-showpercent="true" style="top: 80px;">
+							  <div class="layui-progress-detail">
+								CPU使用率
+							  </div>
+						    <div class="layui-progress-bar layui-bg-red" lay-percent="90%"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="padding: 20px; background-color: #F2F2F2;">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md8">
+					<div class="layui-card">
+						<div class="layui-card-header clickLi">
+							<ul>
+								<li>
+									今日热搜
+								</li>
+								<li style="margin-left: 20px;">
+									今日热帖
+								</li>
+							</ul>
+						</div>
+						<div class="layui-card-body resouOrretie" style="height: 408px;">
+							<ul>
+								<!-- 今日热搜 -->
+								<li class="active">
+									<table class="layui-table" id="resou"></table>
+								</li>
+								<!-- 今日热帖 -->
+								<li>
+									<table class="layui-table" id="retie"></table>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-md4">
+					<div class="layui-card">
+						<div class="layui-card-header">产品动态</div>
+						<div class="layui-card-body" style="height: 60px;">
+						  <div class="layui-carousel" id="cpdt" lay-filter="test4">
+							  <div carousel-item="">
+								<div>
+									<div class="orange linkTo">
+										<a href="#">layuiAdmin快速上手文档</a>
+									</div>
+								</div>
+								<div>
+									<div class="green linkTo">
+										<a href="#">layuiAdmin会员讨论专区</a>
+									</div>
+								</div>
+								<div>
+									<div class="blue linkTo">
+										<a href="#">获得layui官方后台模板系统</a>
+									</div>
+								</div>
+							  </div>
+						  </div>
+						</div>
+					</div>
+					<div class="layui-card">
+						<div class="layui-card-header">
+							<span>作者心语</span>
+							<i class="layui-icon" id="about" style="float: right;">&#xe60b;</i>   
+						</div>
+						<div class="layui-card-body" style="height: 270px;text-indent: 2em;">
+						  <p>一直以来，layui 秉承无偿开源的初心，虔诚致力于服务各层次前后端 Web 开发者，在商业横飞的当今时代，这一信念从未动摇。即便身单力薄，仍然重拾决心，埋头造轮，以尽可能地填补产品本身的缺口。</p>
+						  <p>在过去的一段的时间，我一直在寻求持久之道，已维持你眼前所见的一切。而 layuiAdmin 是我们尝试解决的手段之一。我相信真正有爱于 layui 生态的你，定然不会错过这一拥抱吧。</p>
+						  <p>子曰：君子不用防，小人防不住。请务必通过官网正规渠道，获得 <a href="#" class="layui-table-link" target="_blank" style="color: #007DDB;">layuiAdmin</a>！</p>
+						  <p>—— 贤心(<a href="#" class="layui-table-link" target="_blank" style="color: #007DDB;">layuiAdmin</a>)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="layui.js"></script>
+	<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+	<script>
+	layui.use('carousel', function(){
+	  var carousel = layui.carousel
+	  
+	  //图片轮播
+	  carousel.render({
+	    elem: '#shortcut'
+		//决定轮播宽高的地方:必须要加
+		,width: '100%'
+		,height: '100%'
+	    ,interval: 5000
+		,arrow: 'none'
+		,autoplay: false
+		,trigger: 'hover'
+	  });
+	  carousel.render({
+	    elem: '#toDoList'
+		//决定轮播宽高的地方:必须要加
+		,width: '100%'
+		,height: '100%'
+	    ,interval: 5000
+		,arrow: 'none'
+		,autoplay: false
+		,trigger: 'hover'
+	  });
+	  carousel.render({
+	    elem: '#dataOverview'
+		//决定轮播宽高的地方:必须要加
+		,width: '100%'
+		,height: '100%'
+	    ,interval: 5000
+		,arrow: 'none'
+		,autoplay: false
+		,trigger: 'hover'
+	  });
+	  carousel.render({
+	    elem: '#cpdt'
+		//决定轮播宽高的地方:必须要加
+		,width: '100%'
+		,height: '100%'
+	    ,interval: 5000
+		,arrow: 'none'
+		,autoplay: false
+		,trigger: 'hover'
+	  });
+	});
+	</script>
+	<script>
+		var myCharts = [];
+		
+		// 基于准备好的dom，初始化echarts实例
+		var myChart2 = echarts.init(document.getElementById('pie_chart'));
+		
+		var option2 = {
+			title: {
+				text: '访客浏览器分布',
+				textStyle: {
+					fontWeight: 'normal'
+				},
+				left: 'center',
+				top: '10px'
+			},
+		    legend: {
+		        name: 'diamond',
+		        orient: 'vertical',
+				 //  这个字段控制形状  类型包括 circle，rect ，roundRect，triangle，diamond，pin，arrow，none
+				icon: "arrow", 
+		        left: 10,
+		        top:   0,
+		        data:[          // 数据数组，name 为数据项名称，value 为数据项值
+		                {value:235, name:'chrome'},
+		                {value:274, name:'Firefox'},
+		                {value:310, name:'IE 8.0'},
+		                {value:335, name:'Safari'},
+		                {value:400, name:'其他浏览器'}
+		            ]
+		    },
+		    series : [
+		        {
+		            name: '访问来源',
+		            type: 'pie',    // 设置图表类型为饼图
+		            radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+		            center: ['50%', '70%'],
+		            data:[          // 数据数组，name 为数据项名称，value 为数据项值
+		                {value:235, name:'chrome'},
+		                {value:274, name:'Firefox'},
+		                {value:310, name:'IE 8.0'},
+		                {value:335, name:'Safari'},
+		                {value:400, name:'其他浏览器'}
+		            ]
+		        }
+		    ]
+		};
+		
+	    // 基于准备好的dom，初始化echarts实例
+	    var myChart1 = echarts.init(document.getElementById('line_chart'));
+	
+	    // 指定图表的配置项和数据
+	
+	    var option1 = {
+			title: {
+				text: '今日流量趋势',
+				textStyle: {
+					fontWeight: 'normal'
+				},
+				left: 'center',
+				top: '10px'
+			},
+			tooltip: {
+				trigger: 'axis'
+			},
+			splitLine:{ show:true, lineStyle:{ type:'dashed'} },
+			xAxis: [{
+					type: "category",
+					splitLine: {
+						show: true
+					},
+					boundaryGap: !1,
+					data: ["06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"]
+				}],
+			yAxis: {
+				splitLine: {
+					show: true
+				},
+				minInterval: 20000
+			},
+			series: [{
+					name: 'PV',
+					type: 'line',
+					smooth: true,
+					// lineStyle: '#5FB878',
+					itemStyle: {
+						normal: {
+							color: '#009688', //改变折线点的颜色
+							lineStyle: {
+								color: '#009688' //改变折线颜色
+							}
+						}
+					},
+					areaStyle: '#7ecac3',
+					data: [111, 222, 333, 444, 555, 666, 3333, 33333, 55555, 66666, 33333, 3333, 6666, 11888, 26666, 38888, 56666, 42222, 39999, 28888, 17777, 9666, 6555, 5555, 3333, 2222, 3111, 6999, 5888, 2777, 1666, 999, 888, 777]
+				},
+				{
+					name: 'UV',
+					type: 'line',
+					smooth: true,
+					itemStyle: {
+						normal: {
+							color: '#129bc3', //改变折线点的颜色
+							lineStyle: {
+								color: '#129bc3' //改变折线颜色
+							}
+						}
+					},
+					areaStyle: '#45b1c2',
+					data: [11, 22, 33, 44, 55, 66, 333, 3333, 5555, 12666, 3333, 333, 666, 1188, 2666, 3888, 6666, 4222, 3999, 2888, 1777, 966, 655, 555, 333, 222, 311, 699, 588, 277, 166, 99, 88, 77]
+				},
+			]
+	    };
+	    
+	    var myChart3 = echarts.init(document.getElementById('line_chart2'));
+		
+		var option3 = {
+			title: {
+				text: '最近一周新增的用户量',
+				textStyle: {
+					fontWeight: 'normal'
+				},
+				left: 'center',
+				top: '10px'
+			},
+			tooltip: {
+				trigger: 'axis'
+			},
+			splitLine:{ show:true, lineStyle:{ type:'dashed'} },
+			xAxis: [{
+					type: "category",
+					splitLine: {
+						show: true
+					},
+					boundaryGap: !1,
+					data: ["11-07", "11-08", "11-09", "11-10", "11-11", "11-12", "11-13"]
+				}],
+			yAxis: {
+				splitLine: {
+					show: true
+				},
+				minInterval: 200
+			},
+			series: [{
+					name: '新增用户',
+					type: 'line',
+					smooth: true,
+					// lineStyle: '#5FB878',
+					itemStyle: {
+						normal: {
+							color: '#009688', //改变折线点的颜色
+							lineStyle: {
+								color: '#009688' //改变折线颜色
+							}
+						}
+					},
+					data: [200,300,400,610,150,270,380]
+				}
+			]
+	    };
+	    // 使用刚指定的配置项和数据显示图表。
+		myChart1.setOption(option1);
+		myChart2.setOption(option2);
+		myChart3.setOption(option3);
+		
+		myCharts.push(myChart1);
+		myCharts.push(myChart2);
+		myCharts.push(myChart3);
+		
+		//注意:这一句话一开始也要加，为的是使页面刚刚加载完成图表就已经占据整个盒子
+		window.onload = function () {
+			myChart1.resize();
+		}
+	    //*必须，绑定图表自适应功能
+	    window.onresize = function () {
+			
+			myChart1.resize();
+	    };
+	    let index= 0;
+		//由于layui轮播的特殊性,要想每张图都可以正常加载的话必须要响应轮播图的切换事件,在切换事件里重置图标
+	    layui.use('carousel', function(){
+			var carousel = layui.carousel
+			//事件
+			carousel.on('change(test4)', function(res){
+				index = res.index + 1;
+				if(index == 1){
+					myChart1.resize();
+				}else if(index == 2){
+					myChart2.resize();
+				}else if(index == 3){
+					myChart3.resize();
+				}
+			});
+		})
+	</script>
+	<script type="text/javascript">
+		layui.use('element', function(){
+			var element = layui.element;
+		})
+	</script>
+	<script>
+	layui.use('table', function(){
+	  var table = layui.table;
+	  
+	  //展示已知数据
+	  table.render({
+	    elem: '#resou'
+		,skin: 'line' //行边框风格
+	    ,cols: [[ //标题栏
+		  //此处的style是用来设置单元格样式的方法
+		  {type:'numbers', width: '10%',style:'border-right: 1px solid #d5d5dd94'}
+		  //此处的templet时用来设置单元格数据特殊模板的方法
+	      ,{field: 'key', title: '关键词', width: '30%',templet: '#keyTpl'}
+	      ,{field: 'searchTime', title: '搜索次数', width: '30%', sort: true}
+	      ,{field: 'userCount', title: '用户数', width: '30%', sort: true}
+	    ]]
+	    ,data: [{
+	      "key": "贤心是男是女"
+	      ,"searchTime": 8350
+	      ,"userCount": 2216
+	    }, {
+	      "key": "java程序员能找到女朋友吗"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }, {
+	      "key": "layui官方教程"
+	      ,"searchTime": 666
+	      ,"userCount": 33
+	    }]
+	    //,skin: 'line' //表格风格
+	    ,even: false
+	    ,page: true //是否显示分页
+	    ,limits: [6, 7, 8, 9, 10]
+	    ,limit: 8 //每页默认显示的数量
+	  });
+	  
+	  //展示已知数据
+	  table.render({
+	    elem: '#retie'
+		,skin: 'line' //行边框风格
+	    ,cols: [[ //标题栏
+		  {type:'numbers', width: '10%'}
+		  //此处的templet时用来设置单元格数据特殊模板的方法
+	      ,{field: 'title', title: '标题', width: '30%',templet: '#titleTpl'}
+	      ,{field: 'postMan', title: '发帖者', width: '20%'}
+	      ,{field: 'type', title: '类别', width: '20%'}
+		  ,{field: 'clickRate', title: '点击率', width: '20%', sort: true}
+	    ]]
+	    ,data: [{
+	      "title": "社区开始接受 “赞助商广告” 投放"
+	      ,"postMan": '贤心'
+	      ,"type": '公告'
+		  ,"clickRate": 61632
+	    }, {
+	      "title": "layui一周年"
+	      ,"postMan": '猫吃'
+	      ,"type": '讨论'
+		  ,"clickRate": 61632
+	    }, {
+	      "title": "四个月的前端"
+	      ,"postMan": 'fd'
+	      ,"type": '分享'
+		  ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+		  ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }, {
+	      "title": "如何评价layui和它的作者贤心"
+	      ,"postMan": '纸飞机'
+	      ,"type": '提问'
+	      ,"clickRate": 61632
+	    }]
+	    //,skin: 'line' //表格风格
+	    ,even: false
+	    ,page: true //是否显示分页
+	    ,limits: [6, 7, 8, 9, 10]
+	    ,limit: 8 //每页默认显示的数量
+	  });
+	});
+	</script>
+	<script type="text/html" id="keyTpl">
+	  <a href="#" class="layui-table-link" target="_blank">{{ d.key }}</a>
+	</script>
+	<script type="text/html" id="titleTpl">
+	  <a href="#" class="layui-table-link" target="_blank">{{ d.title }}</a>
+	</script>
+	<script type="text/javascript">
+		// 点击今日热搜以及今日热帖之后触发的事件
+		let clickLis = $('.clickLi li');
+		let responseLis = $('.resouOrretie li');
+		//Uncaught SyntaxError: Identifier 'index' has already been declared注意:此处是使用let的注意点,index变量名在上面已经使用过了
+		let index1 = 0;
+		clickLis.each(function (){
+			$(this).click(function (){
+				index1 = clickLis.index(this);
+				//注意:这个地方不可以使用responseLis.filter(".active").hide()
+				responseLis.filter(".active").removeClass("active");
+				responseLis.eq(index1).addClass("active");
+				console.log(responseLis);
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		layui.use('layer', function(){
+			var layer = layui.layer;
+			$('#about').on('mouseenter', function(){
+			  var that = this;
+			  layer.tips('要支持的噢', that, {
+				  tips: [1, '#33333'],
+				  time: 5000
+			  });
+			});
+		})
+	</script>
+</html>

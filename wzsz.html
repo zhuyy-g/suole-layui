@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/layui.css">
+		<link rel="stylesheet" href="css/wzsz.css">
+		<link rel="icon" href="/favicon.ico">
+		<title>网站设置</title>
+	</head>
+	<body>
+		<div class="container">
+			 <div class="layui-row">
+			    <div class="layui-col-lg12">
+			      <div class="layui-card">
+			        <div class="layui-card-header">网站设置</div>
+			        <div class="layui-card-body">
+						<form class="layui-form" action="">
+							<div class="layui-form-item">
+							    <label class="layui-form-label">网站名称</label>
+							    <div class="layui-input-block">
+							      <input type="text" name="webName" autocomplete="off" value="layuiAdmin" class="layui-input">
+							    </div>
+							</div>
+							<div class="layui-form-item">
+							    <label class="layui-form-label">网站域名</label>
+							    <div class="layui-input-block">
+							      <input type="text" name="webDomainName" lay-verify="domainName" autocomplete="off" value="layuiAdmin" class="layui-input">
+							    </div>
+							</div>
+							<div class="layui-form-item">
+							    <label class="layui-form-label">缓存时间</label>
+							    <div class="layui-input-inline">
+							      <input type="number" name="cacheTime" lay-verify="pass" value=0 autocomplete="off" class="layui-input" style="width: 100px;">
+							    </div>
+							    <div class="layui-form-mid layui-word-aux">分钟&nbsp;&nbsp;&nbsp;&nbsp;本地开发一般推荐设置为 0，线上环境建议设置为 10。</div>
+							</div>
+							<div class="layui-form-item">
+							    <label class="layui-form-label" style="width: 89px;padding-left: 5px;">最大文件上传</label>
+							    <div class="layui-input-inline">
+							      <input type="number" name="cacheTime" lay-verify="pass" value=2048 autocomplete="off" class="layui-input" style="width: 100px;">
+							    </div>
+							    <div class="layui-form-mid layui-word-aux">KB&nbsp;&nbsp;&nbsp;&nbsp;提示：1 M = 1024 KB</div>
+							</div>  
+							<div class="layui-form-item">
+							    <label class="layui-form-label" style="width: 89px;padding-left: 5px;">上传文件类型</label>
+							    <div class="layui-input-block">
+							      <input type="text" name="webDomainName" lay-verify="title" autocomplete="off" value="layuiAdmin" class="layui-input">
+							    </div>
+							</div>
+							<div class="layui-form-item layui-form-text">
+							    <label class="layui-form-label">首页标题</label>
+							    <div class="layui-input-block">
+							      <textarea value="" class="layui-textarea">layuiAdmin 通用后台管理模板系统</textarea>
+							    </div>
+							</div>
+							<div class="layui-form-item layui-form-text">
+							    <label class="layui-form-label">META关键词</label>
+							    <div class="layui-input-block">
+							      <textarea placeholder="多个关键字用英文状态,号分隔" class="layui-textarea"></textarea>
+							    </div>
+							</div>
+							<div class="layui-form-item layui-form-text">
+							    <label class="layui-form-label">版权信息</label>
+							    <div class="layui-input-block">
+							      <textarea placeholder="多个关键字用英文状态,号分隔" lay-verify="copyRight" class="layui-textarea">© 2018 layui.com MIT license</textarea>
+							    </div>
+							</div>
+							<div class="layui-form-item">
+							    <div class="layui-input-block">
+							      <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">确认保存</button>
+							    </div>
+							</div>
+						</form>
+			        </div>
+			      </div>
+			    </div>
+			
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="layui.js"></script>
+	<script>
+		layui.use(['form'], function(){
+		  var form = layui.form;
+		  var layer = layui.layer
+		  //自定义验证规则
+		  form.verify({
+			copyRight: function(value){
+			  if(value.indexOf('©') == -1){
+				return '版权信息不合标准';
+			  }
+			}
+			,domainName: [
+			  /^(?=^.{3,255}$)[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+$/ 
+			  ,'这个域名不符合标准'
+			]
+		  });
+		  
+		  //监听提交
+		  form.on('submit(demo1)', function(data){
+			layer.alert(JSON.stringify(data.field), {
+			  title: '最终的提交信息'
+			})
+			return false;
+		  });
+		});
+	</script>
+</html>
